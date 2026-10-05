@@ -9,7 +9,11 @@ public interface InterfazServicioProducto {
     Producto buscarProductoPorId(Integer id);
     Producto buscarProductoPorNombre(String nombre);
     Producto guardarProducto(Producto producto);
-    void eliminarProductoPorId(Integer id);
+    boolean eliminarProductoPorId(Integer id);
+    List<Producto> cincomascaros();
+    List<Producto> stockmenoradiez();
+    Producto actualizarProducto(Integer id,Producto producto);
+
 
 
 }
